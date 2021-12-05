@@ -1,6 +1,13 @@
 import React, { Component } from "react";
-import { Card, CardTitle, Row, Col } from "react-materialize";
-import { Button } from "react-materialize";
+import {
+  Button,
+  Card,
+  CardTitle,
+  Row,
+  Col,
+  TextInput,
+  Icon,
+} from "react-materialize";
 class App extends Component {
   render() {
     return (
@@ -37,6 +44,14 @@ class App extends Component {
               baju
             </Card>
           </Col>
+        </Row>
+        <TextInput id="TextInput-33" label="First Name" />
+
+        <Row>
+          <TextInput type="text" label="Nama Depan" icon="account_circle" />
+          <TextInput type="text" label="Nama Belakang" icon="account_circle" />
+
+          <TextInput type="file" label="Masukkan sebuah file" />
         </Row>
       </div>
     );
