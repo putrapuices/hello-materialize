@@ -7,11 +7,32 @@ import {
   Col,
   TextInput,
   Icon,
+  Carousel,
 } from "react-materialize";
 class App extends Component {
   render() {
     return (
       <div>
+        <Carousel
+          images={[
+            "https://picsum.photos/200/300?image=0",
+            "https://picsum.photos/200/300?image=1",
+            "https://picsum.photos/200/300?image=2",
+            "https://picsum.photos/200/300?image=3",
+            "https://picsum.photos/200/300?image=4",
+          ]}
+          options={{
+            dist: -100,
+            duration: 200,
+            fullWidth: false,
+            indicators: true,
+            noWrap: false,
+            numVisible: 5,
+            onCycleTo: null,
+            padding: 0,
+            shift: 0,
+          }}
+        />
         <h1>Selamat Datang React Materialize</h1>
         <Button>Sukses</Button>
         <Row>
